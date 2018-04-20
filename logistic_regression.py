@@ -6,6 +6,9 @@ from scipy import ndimage
 
 
 def load_data():
+"""
+Load Data Function and training data are taken from coursera's machine learning course.
+"""
     train_dataset = h5py.File('datasets/train_catvnoncat.h5', "r")
     train_x = np.array(train_dataset["train_set_x"][:])
     train_y = np.array(train_dataset["train_set_y"][:]) 
